@@ -1,0 +1,54 @@
+@font-face{
+	font-family: 'etchas';
+	src: url('./etchas regular.otf') format('opentype');
+}
+.etchas {
+	font-family: 'etchas';
+}
+
+.grande {
+	left: 15px;
+   bottom: 61%;
+font-size: 111px;
+}
+.chico {
+	bottom: 57%;
+	left: 11px;
+	font-size: 20px;
+}
+.color-green {
+	color: green;
+}
+.text-center {
+	text-align: center;
+}
+.top {
+	z-index: 5;
+    position: absolute;
+    width: 100%;
+    margin-top: -200px;
+}
+.item{ 
+	height: 600px;
+}
+.item img{
+	width: 100%;
+    
+}
+.navbar {
+	margin-bottom: 0px;
+}
+.banner {
+	height: 400px;
+	position: relative;
+}
+.banner p {
+	color: white;
+	z-index: 2;
+	position: absolute;
+}
+.banner img {
+	width: 100%;
+	z-index: 1;
+	position: absolute;
+}

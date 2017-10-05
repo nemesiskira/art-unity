@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <style>
+    /* This helps the ng-show/ng-hide animations start at the right place. */
+    /* Since Angular has this but needs to load, this gives us the class early. */
+    
+    .ng-hide {
+        display: none!important;
+    }
+    </style>
+    <title ng-bind="title">
+        Art-Unity
+    </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+    <base href="/">
+    <!-- build:css styles/lib.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/bower_components/toastr/toastr.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <link rel="stylesheet" type="text/css" href="styles/styles.css"> 
+    <!-- build:css styles/app.css -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/.tmp/styles.css">
+    <!-- endinject -->
+    <!-- endbuild -->
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">a cerca de <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">ayuda</a></li>
+            <li><a href="#">configuracion</a></li>
+            <li><a href="#">proposito</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">no entres aqui</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="banner etchas">
+    <img src="images/fondo.png">
+    <p class="grande"> Art-Unity </p>
+    <p class="chico"> la comunidad de arte mas grande en internet </p>
+</div>
+
+
+<div class="top" >
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="8"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="9"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="10"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="11"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="12"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="13"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="14"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="15"></li>
+      </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/pintura-abstracta.jpg" alt="loading">
+      <div class="carousel-caption">
+        Pintura
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/dibujo.jpg" alt="...">
+      <div class="carousel-caption">
+        Dibujo
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/Grabado.jpg" alt="......">
+      <div class="carousel-caption">
+      Artes Graficas y digitales
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/literarias.jpg" alt="...">
+      <div class="carousel-caption">
+        Artes Literarias
+    </div>
+   </div>
+    <div class="item">
+      <img src="images/escultura.jpg" alt="...">
+      <div class="carousel-caption">
+        Escultura y modelado
+    </div>
+   </div>
+   <div class="item">
+      <img src="images/artesanias.jpeg" alt="...">
+      <div class="carousel-caption">
+        artes decorativas y oficios
+    </div>
+   </div>
+    <div class="item">
+      <img src="images/partitura.jpg" alt="dot dot dot">
+      <div class="carousel-caption">
+      Musica
+       </div>
+      </div>
+      <div class="item">
+      <img src="images/peliculas.jpg" alt="lol keep waiting">
+      <div class="carousel-caption">
+      Cinematografia
+      </div>
+    </div>
+      <div class="item">
+      <img src="images/danza.jpg" alt="be patient">
+      <div class="carousel-caption">
+      Artes Escenicas
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/performance.jpg" alt="......">
+      <div class="carousel-caption">
+      arte efimero y arte de accion
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/artec.jpg" alt="...">
+      <div class="carousel-caption">
+        Arte Corporal
+      </div>
+    </div>
+       <div class="item">
+      <img src="images/fotografia.jpg" alt="......">
+      <div class="carousel-caption">
+      Fotografia
+      </div>
+    </div>
+       <div class="item">
+        <div class="col-xs-6">
+            <img src="images/walkingcicle.gif" alt="wait">
+        </div>
+        <div class="col-xs-6">
+            <img src="images/maxresdefault.jpg" alt="almost done">
+        </div>
+      
+      <div class="carousel-caption">
+      Animacion
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/videojuegos-imagen.jpg" alt="your internet socks">
+      <div class="carousel-caption">
+      Videojuegos
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/diseño.jpg" alt="....">
+      <div class="carousel-caption">
+      Diseño
+      </div>
+    </div>
+
+   <div class="item">
+      <img src="images/Arqu.jpg" alt=".....">
+      <div class="carousel-caption">
+      Arquitectura
+      </div>
+    </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- build:js js/lib.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.js"></script>
+    <script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/bower_components/extras.angular.plus/ngplus-overlay.js"></script>
+    <script src="/bower_components/moment/moment.js"></script>
+    <script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="/bower_components/toastr/toastr.js"></script>
+    <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js js/app.js -->
+    <!-- inject:js -->
+    <script src="/src/client/app/app.module.js"></script>
+    <!-- endinject -->
+    <!-- inject:templates:js -->
+    <!-- endinject -->
+    <!-- endbuild -->
+</body>
+
+</html>
