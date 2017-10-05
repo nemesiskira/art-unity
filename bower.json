@@ -27,7 +27,9 @@
     "moment": "~2.18.1",
     "angular-ui-router": "~1.0.4",
     "toastr": "~2.1.2",
-    "angular-bootstrap": "~2.5.0"
+    "angular-bootstrap": "~2.5.0",
+    "animate.css": "^3.5.2",
+    "wow": "^1.1.2"
   },
   "resolutions": {
     "angular": "~1.6.4"

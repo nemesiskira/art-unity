@@ -1,12 +1,13 @@
 (function() {
     'use strict';
 
-    angular.module('app', [
-        'app.core',
-        'app.widgets',
-        'app.admin',
-        'app.dashboard',
-        'app.layout'
-    ]);
+    angular.module('app', [])
+    .controller('controller', controller);
+
+    controller.$inject = [];
+
+    function controller() {
+
+    }
 
 })();
