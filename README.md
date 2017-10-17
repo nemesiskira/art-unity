@@ -1,7 +1,7 @@
-# PideLaCarta
+# Art-Unity
 
 ## Clonar Repositorio
-- `git clone git@gitlab.com:Delhipanda/PideLaCarta.git`
+- `git clone https://github.com/nemesiskira/art-unity`
 Se creará una carpeta PideLaCarta en la carpeta donde esté la consola
 
 **Generated from HotTowel Angular**
