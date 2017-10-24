@@ -1,13 +1,14 @@
 (function() {
-    'use strict';
+  'use strict';
 
-    angular.module('app', [])
+  angular
+    .module('app', [])
     .controller('controller', controller);
 
-    controller.$inject = [];
+  controller.$inject = [];
 
-    function controller() {
+  function controller() {
 
-    }
+  }
 
 })();
