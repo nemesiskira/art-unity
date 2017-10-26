@@ -2,7 +2,7 @@
   'use strict';
 
   angular
-    .module('app', [])
+    .module('app', ['ngRoute'])
     .controller('controller', controller);
 
   controller.$inject = [];

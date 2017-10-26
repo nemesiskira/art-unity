@@ -30,7 +30,8 @@
     "angular-bootstrap": "~2.5.0",
     "animate.css": "^3.5.2",
     "wow": "^1.1.2",
-    "particles.js": "^2.0.0"
+    "particles.js": "^2.0.0",
+    "angular-route": "^1.6.6"
   },
   "resolutions": {
     "angular": "~1.6.4"
