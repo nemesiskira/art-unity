@@ -107,3 +107,16 @@ canvas {
 .count-particles{
   border-radius: 0 0 3px 3px;
 }
+
+ng-view {
+  margin-top:50px;
+}
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}

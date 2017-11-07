@@ -2,7 +2,7 @@
 
 ## Clonar Repositorio
 - `git clone https://github.com/nemesiskira/art-unity`
-Se creará una carpeta PideLaCarta en la carpeta donde esté la consola
+Se creará una carpeta Art-Unity en la carpeta donde esté la consola
 
 **Generated from HotTowel Angular**
 
