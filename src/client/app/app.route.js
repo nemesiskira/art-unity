@@ -13,7 +13,7 @@
           controller: 'seccionesController',
           controllerAs: 'vm'
         })
-        .when('/post', {
+        .when('/post/:id', {
           templateUrl : 'app/post/post.html',
           controller: 'PostsController',
           controllerAs: 'vm'

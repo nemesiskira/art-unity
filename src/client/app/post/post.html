@@ -7,7 +7,7 @@
         <div class="col-lg-8">
 
           <!-- Title -->
-          <h1 class="mt-4">{{ post.title }}</h1>
+          <h1 class="mt-4">{{ vm.post.titulo }}</h1>
 
           <!-- Author -->
           <p class="lead">
@@ -23,124 +23,26 @@
           <hr>
 
           <!-- Preview Image -->
-          <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
+          <img class="img-fluid rounded" ng-src="{{ vm.post.imagenes }}">
 
           <hr>
 
           <!-- Post Content -->
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
+          <p class="lead">
+            {{vm.post.descripcion}}
+          </p>
 
-          <p>En una fiesta, como los que se muestran a continuación, no se puede dejar de cantar, bailar y participar con todas las otras personas que asisten al evento. Realmente hay algo hermoso sobre el poder de las fiestas para parecerse a la gente y celebrar nuestra existencia. Si usted siente esto, aquí tiene 20 festivales que debe participar en su vida.
-
-Festival de los colores Holi, India
-
-
-
-Festival luces de invierno – Ciudad de Kuwana, Japón
-
-Con un poco más de 7 millones de luces LED, el jardín botánico ‘Naba No Soto’ celebra el invierno con un elegante estilo. La mayor parte da la energía es usada por baterías cargadas con paneles solares durante el día, minimizando el efecto de las celebraciones sobre el medio ambiente.
-
-Carnaval de Venecia, Italia
-
-En 1162, la República de Venecia fue victoriosa contra un intento de invasión. El día de la victoria, el pueblo de Venecia marca el comienzo de su tradición. Con el tiempo muchas cosas cambian en la tradición, lo que no ha cambiado desde el primer carnaval, son los exquisitos trajes
-
-
-Fiesta del fuego «Up Helly Aa» en las islas de Shetland, Escocia
-
-Up Helly Aa es un festival que pone el final de la temporada navideña y también envía a los espectadores a través del tiempo. En Lerwick, capital de las Islas Shetland, miles marchan a través de las calles con disfraces temáticos. Esta marcha acaba arrojando las antorchas de fuego a las embarcaciones Vikingas.
-
-
-La Tomatina en Buñol, España
-
-Cuenta la leyenda que el lanzamiento de tomates comenzó en 1945, cuando la gente estaba tirando verduras sobre conejos para evitar que devoren el campo de frutas. Algunas personas se vieron afectadas y comenzaron una “guerra”. Hoy en día, el último miércoles del mes de agosto, 20.000 juerguistas tiran tomates más de 150.000 en un día, sólo por diversión.
-
-
-Festival Internacional de globos aerostáticos en Alburquerque – Estados Unidos
-
-El festival más grande de globos en el mundo alberga a 750 globos de aire caliente durante nueve días de festejo. Este acontecimiento empezó en 1972, cuando 13 globos se elevaron durante la celebración del aniversario de la radio 770 KOB. Te prometemos que al final del festival terminaras con el cuello adolorido
-
-
-Hombre en llamas en el desierto de Black Rock en Nevada, Estados Unidos
-
-Hombre en llamas es un festival que celebra el arte y la cultura. Varios artistas se reúnen y construyen enormes instalaciones, mientras que algunos músicos entretienen a la multitud, un poco más de 50,000 personas. Al final todo terminan en la quema de un hombre construido de madera, Que mide más de 30 metros de altura.
-
-
-Festival de los faroles en Asia
-
-El festival de los faroles se ha celebrado desde los tiempos inmemoriales en el decimoquinto día del primer mes en el calendario lunar. Las personas de origen chino y vietnamita viajan a los templos con miles de faroles decorados con diseños complejos, pero hermosos. Al final de la noche, los faroles vuelan creando un gran espectáculo que simboliza dejar ir su propio pasado.
-
-
-Festival de Garma en Australia
-
-El festival de Garma es una fiesta celebrada por el pueblo Yolngu, nativos australianos. El festival está diseñado para fomentar la práctica, conservación y mantenimiento de las danzas tradicionales, canciones, arte y la ceremonia. También pretende compartir el conocimiento y la cultura de los Yolngu con los pocos invitados afortunados.
-
-
-Festival del Sol Inti Raymi, Perú
-
-Durante todo el tiempo del Imperio Inca, el festival del sol fue uno de los acontecimientos más importantes de cada año. En la ceremonia rinden homenaje a Inti, el Dios del Sol. Desde 1944, Perú ha sido anfitrión de una representación teatral cada mes de junio en honor al antiguo pueblo Inca, atrayendo miles de turistas.
-
-
-Festival de la nieve de Sapporo en Japón
-
-En febrero, durante siete días, cientos de esculturas monolíticas son visitados por millones de personas. El festival de la nieve comenzó en 1950, cuando 6 estudiantes de secundaria construyeron 6 esculturas de nieve en el parque Odori después de que festivales fueran suspendidos por la segunda guerra mundial. En 1955, las fuerzas del ejército local se unieron a este nuevo festival y crearon las primeras esculturas de nieve en forma masiva. Desde ese entonces, las cosas han aumentado mucho.
-
-
-Festival del Elefante en Jaipur, India
-
-Los elefantes son importantes en la cultura India. Cada marzo de cada año, celebran su propio festival del elefante. Todo comienza con una procesión de elefantes vestidos con unos trajes magníficos y joyas extravagantes. Los eventos incluyen polo, carreras, y tira y afloja.
-
-
-Día de los muertos en México
-
-El día de los muertos es una fiesta mexicana donde la gente se junta para orar, recordar a familiares y amigos que han fallecido. Esta fiesta remonta a cientos de años de la cultura Azteca. La celebración incluye trajes elaborados y una gran variedad de comida tradicional.
-
-
-Festival Noches Blancas en San Petersburgo, Rusia
-
-Las noches blancas es un festival internacional de Artes, se celebra durante la temporada del Ártico, cuando el sol todavía es visible a la media noche. Parte del festival es el velero escarlata, un barco con velas rojas que navega por todo el largo del rio Neva, acompañado de fuegos artificiales y miles de espectadores. Esta tradición empezó después de la segunda guerra mundial, cuando los estudiantes se juntaron para celebrar el fin del año escolar. El evento se convirtió rápidamente en una manifestación de la libertad de la escuela y el cumplimiento en el contexto del régimen comunista totalitario.
-
-
-Festival de música electrónica en el Bosque en Rothbury, Michigan
-
-Es un evento de música electrónica de 4 días en el bosque. Cada junio de cada año, se vive este hermoso espectáculo de luz y música, creando una experiencia surrealista única. Un porcentaje de las ganancias generadas son donadas a un municipio, donde viven personas de bajo recurso.
-
-
-Festival internacional de escultura de arena en Portugal
-
-Como el mayor evento de escultura de arena en el mundo, este festival se extiende a través de 1400 m² de playa. Cada año, 60 artistas utilizan 35 toneladas de arena para crear 50 increíbles obras de arte.
-
-
-Festival Mundial de Música de la Selva Tropical en Kuching, Borneo
-
-En medio de la selva tropical, se reúnen miles de personas para celebrar a la música (Música variada). Cada año, decenas de bandas de todo el mundo se juntan para tocar todo tipo de música que no podrías imaginar. vienen a jugar ante una multitud de 30.000 personas.
-
-
-Fiesta de Cascamorras en España
-
-
-Guadix y Baza son dos pueblos ubicados en Granada, una comunidad del sur de España. Históricamente son hermanos, vecinos y rivales. Hace más de 500 años, un trabajador de Guadix encontró enterrado una imagen de la Virgen de la Piedad. Un grupo de Baza robo la pieza. Esto estallo a una pelea y ahora, después de solucionar sus diferencias, los habitantes de los dos pueblos se reúnen para celebrar este festival cada año y entrar en una batalla de pintura.
-
-
-
-Fiesta de Glastonbury, Inglaterra
-
-Desde 1970, Glastonbury ha sido uno de los mejores festivales de música en el mundo. En el 2013, 135 mil personas asistieron a escuchar en vivo a los artistas Arctic Monkeys y Rolling Stones, así como a ver danzas, comedia, teatro y espectáculos de circo.
-
-Share the post "20 Festivales legendarios que tiene que asistir en su vida"
-</p>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
-
+          
           <blockquote class="blockquote">
-            <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+            <p class="mb-0">imayin al de pipol</p>
             <footer class="blockquote-footer">Someone famous in
               <cite title="Source Title">Source Title</cite>
             </footer>
           </blockquote>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
+          <p></p>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
+          <p></p>
 
           <hr>
 

@@ -5,18 +5,26 @@
     .module('app')
     .controller('PostsController', PostsController);
 
-  PostsController.$inject = ['$http'];
+  PostsController.$inject = ['$http', '$routeParams'];
 
-  function PostsController($http) {
+  function PostsController($http, $routeParams) {
   	var vm = this;
 
+  	vm.idpost= $routeParams; 
+  	console.log(vm.idpost);
   	active();
 
   	function active() {
-  		$http.get('http://localhost/artunity/conexion.php').then(function(data) {
-  			console.log(data);
+  		$http({
+  			method: 'GET',
+  			url: 'http://localhost/artunity/post.php',
+  			params: vm.idpost
+  		}).then(function(respose) {
+  			console.log(respose.data[0]);
+  			vm.post = respose.data[0];
   		});
   	}
   }
 
 })();
+
